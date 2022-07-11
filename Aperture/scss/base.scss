@@ -1,0 +1,40 @@
+@import "breackpoints";
+
+body {
+    font-family: 'Poppins' , sans-serif;
+    background-color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1168px;
+    padding: 0 15px;
+    @include breackpoint(lg) {
+        max-width: 970px;
+    }
+    @include breackpoint(md) {
+        max-width: 750px;
+    }
+    @include breackpoint(sm) {
+        max-width: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #fff;
+  }
+
+a {
+    color: #fff;
+    transition: .2s all;
+}
+
+a:hover, a:focus, a:active {
+    opacity: .75;
+}
+
+
+.no-scroll {
+    overflow: hidden;
+  }

@@ -1,0 +1,45 @@
+@mixin breackpoint($point) {
+    @if $point  == xxl {
+        @media screen and (max-width: 1400px) {
+            @content;
+        }
+    }
+    @else if $point == xl {
+        @media screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $point == lg {
+        @media screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    @else if  $point == md {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if  $point == sm {
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    }
+    @else if  $point == xs {
+        @media screen and (max-width: 320px) {
+            @content;
+        }
+    }
+}
+
+@mixin heightpoint($screenmax) {
+    @if $screenmax == md {
+        @media screen and (max-width: 720px){
+            @content;
+        }
+    }
+    @else if  $screenmax == sm {
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    }
+}
